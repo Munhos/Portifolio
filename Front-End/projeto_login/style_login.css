@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(pexels-tom-swinnen-1309766.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#lista{
+    text-align: right;
+    margin: 20px;
+
+}
+
+
+
+.elementos_nav{
+    color: white;
+    display: inline;
+    padding: 15px;
+    margin: 10px;
+    text-align: right;
+    border: 5px;
+    
+
+}
+
+.elementos_nav:hover{
+    color: white;
+    display: inline;
+    padding: 10px;
+    
+    
+    background-color: rgba(92, 0, 128, 0.514);
+
+    border-radius: 10px;
+    border-style: solid;
+    
+    
+
+    cursor: pointer;
+
+}
+#logo{
+    color: white;
+    text-align: left;
+    list-style: none;
+    cursor: pointer;
+}
+
+#fundo_login{
+    min-height: 32em;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    border: transparent;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+
+
+
+
+
+#informacoes{
+    text-align: center;
+    height: 50vh;
+    width: 30vw;
+    
+}
+
+#informacoes h1, #termos, input{
+    margin-bottom: 3vh;
+    height: 2em;
+}
+
+#informacoes h1{
+    padding-top: 10px;
+}
+
+#input_username, #input_email, #input_senha{
+    width: 70%;
+    position: relative;
+}
+#botao_registro{
+    width: 70%;
+    height: 30px;
+    border: none;
+    background-color: rgba(92, 0, 128, 0.747);
+    color: white;
+}
+
+#botao_registro:active{
+    background-color: rgba(92, 0, 128);
+}
+
+#botao_registro:hover{
+    cursor: pointer;
+}
+
+.div_position_relative{
+    position: relative;
+    width: 100%;
+}
+
+/* ANIMAÇÃO LOGIN */
+
+#label_username{
+    position: absolute;
+    left: 17%;
+    top: 8%;
+    
+}
+
+#input_username:focus + #label_username{
+    top: -40%;
+    transition: .5s;
+    
+}
+
+#label_email{
+    position: absolute;
+    left: 17%;
+    top: 8%;
+    
+}
+
+#input_email:focus + #label_email{
+    top: -40%;
+    transition: .5s;
+    position: absolute;
+}
+
+#label_senha{
+    position: absolute;
+    left: 17%;
+    top: 8%;
+    
+}
+
+#input_senha:focus + #label_senha{
+    top: -40%;
+    transition: .5s;
+    position: absolute;
+}
+
+.termos_usuario{
+    display: inline;
+    transform: translateY(9.5px);
+}
+
+/* ---------------------------------------------- */
+
+#botao_register_login{
+    cursor: pointer;
+    
+    
+}

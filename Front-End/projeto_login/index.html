@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_login.css">
+    <link rel="stylesheet" href="style_contact.css">
+    <link rel="stylesheet" href="style_login_login.css">
+    <title>Login Screen</title>
+    <script src="https://kit.fontawesome.com/169d99f0e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ol id="lista">
+                <li id="logo">LOGO</li>
+                <li class="elementos_nav" id="botao_nav_home">Home</li>
+                <li class="elementos_nav" id="botao_nav_about">About</li>
+                <li class="elementos_nav" id="botao_nav_services">Services</li>
+                <li class="elementos_nav" id="botao_nav_contact">Contact</li>
+                <li class="elementos_nav" id="botao_nav_login">Login</li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <dialog id="fundo_login">
+            <div id="informacoes">
+                <h1>Registration</h1>
+
+    
+                <div class="div_position_relative">
+                    <input type="text" id="input_username">
+                    <label for="input_username" id="label_username">Username</label>
+                </div>
+
+                <br>
+
+                <div class="div_position_relative">
+                    <input type="email" name="email" id="input_email">
+                    <label for="input_email" id="label_email">E-mail</label>
+                </div>
+                
+                <br>
+
+                <div class="div_position_relative">
+                    <input type="password" name="senha" id="input_senha">
+                    <label for="input_senha" id="label_senha">Senha</label>
+                </div>
+
+                <br>
+
+                <div>
+                    <input type="checkbox" name="termos" class="termos_usuario">
+                    <p class="termos_usuario">accept users terms</p>
+                </div>
+
+                <br>
+                
+                <input type="submit" value="Register" id="botao_registro">
+                <p id="termos">Alread have a accont? <strong id="botao_register_login">Login</strong></p>
+            </div>
+        </dialog>
+
+        <dialog id="fundo_contact">
+            <div id="div_dundo_contact">
+                <h1>Contact</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repudiandae recusandae, eveniet neque accusantium dolores exercitationem nulla expedita! Adipisci labore, quod accusantium natus sequi impedit ullam reiciendis voluptates alias blanditiis?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit similique eius, numquam doloribus molestias illo laboriosam nisi suscipit, quibusdam eveniet ab aspernatur. Cupiditate atque excepturi, sed laborum ipsum ab.</p>
+                <div id="icones">
+                    <i class="fa-brands fa-square-facebook" class="icones"></i>
+                    <i class="fa-brands fa-square-instagram" class="icones"></i>
+                    <a href="https://www.linkedin.com/in/julio-cesar-96088a236/" target="_blank"><i class="fa-brands fa-linkedin" class="icones"></i></a>
+                </div>
+
+
+            </div>
+        </dialog>
+
+        <dialog id="fundo_login_login">
+            <div id="div_fundo_login_login">
+                <h1>Login</h1>
+                <div>
+                    <input type="email" name="" id="input_email_login">
+                    <label for="input_email_login" id="label_email_login">E-mail</label>
+                    
+                </div>
+
+                <div>
+                    <input type="password" name="" id="input_senha_login">
+                    <label for="input_senha_login" id="label_senha_login">Senha</label>
+                    
+                </div>
+
+                <div>
+                    <input type="submit" value="Login" id="botao_login">
+                </div>
+            </div>
+        </dialog>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

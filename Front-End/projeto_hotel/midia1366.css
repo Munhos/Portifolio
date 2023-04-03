@@ -1,0 +1,392 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 769px) and (max-width:1366px){
+    /* PARTE 1 */
+    header > #parte_branca{
+        display: flex;
+        margin: 15px;
+        width: 100%;
+        
+    }
+
+    header > #parte_branca > li{
+        display: inline;
+
+    }
+
+   
+    #header_icons{
+        display: inline-block;
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 15%;
+        text-align: left;
+    }
+
+    #header_icons li{ 
+        list-style: none;
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% / 3 - 3px);
+    }
+
+    #header_icons li:hover{
+        background-color: #f44336;
+    }
+
+    #header_icons li i{
+        padding: 15px;
+    }
+
+    #parte_1_1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        width: 50vw;
+        height: 250px;
+        background-color: white;
+    }
+    
+
+    #parte_1{
+        background-image: url(imagens/london.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 50vh;
+        display: block;
+        margin: auto;
+
+        position: relative;
+    }
+
+    #parte_1 > h1{
+        display: block;
+        font-size: 2em;
+        text-align: left;
+        padding: 15px;
+        padding-left: 0px;
+    }
+
+    #main_formulario{
+        padding: 0;
+        margin: 0;
+    }
+
+    #parte_1 #main_formulario label{
+        color: darkgray;
+        padding: 5px;
+        padding-left: 0px;
+        margin-left: 15px;
+        
+    }
+
+    #parte_1 #main_formulario input{
+        color: darkgrey;
+        padding: 8px;
+        margin: 0;
+        padding-left: 0px;
+        margin-left: 15px;
+        width: 90%;
+        
+    }
+
+    #main_input{
+        margin: 0;
+        padding-left: 0;
+
+    }
+    #parte_1 #main_input input{
+        
+        border-radius: 0px;
+        color: white;
+        background-color: rgb(71, 71, 71);
+        margin-left: 0px;
+
+        width: 45%;
+
+        margin-left: 15px;
+        
+        border-color: transparent;
+    }
+
+    #parte_1 #main_input input:hover{
+        
+        background-color: rgb(129, 129, 129);
+        
+        
+        border-color: transparent;
+    }
+
+    /* PARTE 2 */
+
+    #fundo_parte_2{
+        background-color: rgb(231, 231, 231);
+    }
+
+    #parte_2{
+        background-color: rgb(231, 231, 231);
+        width: 90vw;
+        display: block;
+        margin: auto;
+    }
+
+    #parte_2 > h2{
+        text-align: left;
+        font-size: 1.5em;
+        padding-top: 50px;
+        padding-bottom: 10px;
+
+    }
+
+    #parte_2 > p{
+        padding-bottom: 10px;
+    }
+
+    #imagens{
+        width: 100%;
+        height: 700px;
+        display: flex;    
+   }
+
+   #container_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+
+    width: 50%;
+    margin-left: 10px;
+
+   }
+
+   #imagem_1 img{
+    height: 100%;
+    width:100%;
+   }
+
+   #imagem_2 img{
+    height: 100%;
+    width:100%;
+   }
+
+   #imagem_3 img{
+    height: 100%;
+    width:100%;
+   }
+
+   #imagem_4 img{
+    height: 100%;
+    width:100%;
+   }
+
+   #imagem_5 img{
+    height: 100%;
+    width:100%;
+   }
+
+   #imagem_1{
+    height: 100%;
+    width: 50%;
+   }
+
+   #imagem_2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+   }
+
+   #imagem_3{
+    height: 100%;
+    width: 100%;
+    display: flex;
+   }
+
+   #imagem_4{
+    height: 100%;
+    width: 100%;
+    display: flex;
+   }
+
+   #imagem_5{
+    height: 100%;
+    width: 100%;
+    display: flex;
+   }
+
+   
+
+   .box{
+    width: 100px;
+    height: 100px;
+   }
+
+   /* PARTE 3 */
+    
+   #fundo_parte_3{
+    background-color:rgb(231, 231, 231) ;
+   }
+
+   #parte_3{
+    width: 90vw;
+    width: 90vw;
+    display: block;
+    margin: auto;
+   }
+
+   #parte_3 > h2{
+    padding-bottom: 20px;
+   }
+
+   #parte_3 > p{
+    padding-bottom: 20px;
+   }
+
+   .imagem_parte_3{
+    width: 100%;
+   }
+
+   .imagem_mostruario_parte_3{
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 20px;
+    height: 48vh;
+    width: 44.7vw;
+   }
+
+   .imagem_mostruario_parte_3 h3, p, input{
+    margin-left: 10px;
+    padding: 10px;
+   }
+
+   .imagem_mostruario_parte_3 input{
+        background-color: transparent;
+        border-color: transparent;
+        
+   }
+
+   .imagem_mostruario_parte_3 input:active{
+    background-color: rgba(224, 224, 224, 0.534);
+    border-color: transparent;
+    
+    }
+
+    #ofertas_parte_3{
+        background-color: rgb(54, 54, 54);
+        color: white;
+    }
+    #ofertas_parte_3 > h2{
+        margin-left: 20px;
+        padding-top: 20px;
+        font-size: 2em;  
+    }
+
+    #ofertas_parte_3 > p >#email_offers{
+        margin: 0;
+        margin-bottom: 10px;
+        width: calc(100% - 30px);
+    }
+
+    #ofertas_parte_3 > p > #input_offers{
+        margin: 0;
+
+        border-radius: 0px;
+        border-color: transparent;
+        color: white;
+        background-color: #f44336;
+    }
+
+    #ofertas_parte_3 > p > #input_offers:active{
+        background-color: #d1392e;
+    }
+
+    /* footer */
+
+    footer{
+        background-color: rgb(231, 231, 231);
+    }
+
+    #fundo_footer{
+        width: 90vw;
+        display: block;
+        margin: auto;
+    }
+
+    #fundo_info > h2{
+        padding: 20px 0px;
+    }
+
+   
+
+    #texto_footer{
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .texto_footer{
+        margin: 10px;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .texto_footer i{
+        padding-right: 15px;
+    }
+
+    .input_footer{
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    .input_footer input{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 45px;
+    }
+
+    #input_footer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    #input_footer input{
+        margin: 0;
+        padding: 0;
+
+        
+        width: 25%;
+        height: 45px;
+
+        color: white;
+        background-color: black;
+        border-radius: 0px;
+        border-color: transparent;
+
+    }
+
+    #input_footer input:active{
+        background-color: rgba(0, 0, 0, 0.685);
+    }
+
+
+    .fundo_redes_icon{
+        text-align: center;
+    }
+
+}

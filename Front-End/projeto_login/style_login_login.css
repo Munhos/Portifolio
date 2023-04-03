@@ -1,0 +1,69 @@
+#fundo_login_login{
+    min-height: 20em;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+
+#fundo_login_login h1{
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+#div_fundo_login_login{
+    text-align: center;
+}
+
+#input_senha_login, #input_email_login{
+    margin-bottom: 40px;
+    height: 2em;
+    width: 70%;
+    
+    
+}
+
+#label_email_login{
+    position: absolute;
+    top: 32%;
+    left: 18%;
+}
+
+#label_senha_login{
+    position: absolute;
+    top: 54%;
+    left: 18%;
+}
+
+#input_email_login:focus + #label_email_login{
+    top: 24%;
+    transition: .5s;
+}
+
+#input_senha_login:focus + #label_senha_login{
+    top: 46%;
+    transition: .5s;
+}
+
+#botao_login{
+    width: 70%;
+    height: 30px;
+    border: none;
+    background-color: rgba(92, 0, 128, 0.747);
+    color: white;
+}
+
+#botao_login:active{
+    background-color: rgba(92, 0, 128);
+}
+
+#botao_login:hover{
+    cursor: pointer;
+}
