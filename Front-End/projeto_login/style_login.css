@@ -130,13 +130,16 @@ main{
     left: 17%;
     top: 8%;
     
+    
 }
 
 #input_username:focus + #label_username{
     top: -40%;
     transition: .5s;
+    position: absolute;
     
 }
+
 
 #label_email{
     position: absolute;
@@ -149,6 +152,14 @@ main{
     top: -40%;
     transition: .5s;
     position: absolute;
+}
+
+.sumir{
+    display: none;
+}
+
+.aparecer{
+    display: flex;
 }
 
 #label_senha{
