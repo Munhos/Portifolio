@@ -9,6 +9,13 @@
 
 body{
     min-height: 100vh;
+    width: 1920px;
+}
+
+html{
+    display: flex;
+    justify-content: center;
+    
 }
 
 header{
