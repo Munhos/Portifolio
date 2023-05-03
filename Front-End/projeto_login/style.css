@@ -1,0 +1,623 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+}
+:root{
+    --cor_verde: #30bc9b;
+    --cor_azul: #315ca0
+}
+
+body{
+    min-height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+#container_header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    height: 700px;
+    width: 1920px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(imagens/main.png);
+    
+}
+
+header nav{
+    display: inline-block;
+    transform: translate(400px);
+    margin-top: 20px;
+    
+    
+}
+
+#lista_header{
+    list-style: none;
+    
+}
+
+nav li {
+    margin-right: 20px;
+    display: inline;
+    position: relative;
+  }
+
+.botao{
+width: 150px;
+height: 30px;
+background-color: #ffffff40;
+border: none;
+border-radius: 5px;
+font-weight: bolder;
+font-size: 1em;
+box-shadow: 0 3px 5px rgba(0, 0, 0, 0.26);
+border-left: 2px solid transparent;
+position: relative;
+}
+
+.botao:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao:hover + .linha_botao{
+    transform: scale(1.2);
+    animation: linha_botao 1s forwards;
+}
+@keyframes linha_botao{
+    0%{
+        width: 0px;
+    }
+    50%{
+        background-color: black;
+        width: 133px;
+    }
+    100%{
+        background-color: black;
+        width: 120px;
+    }
+}
+
+.linha_botao{
+    display: inline-block;
+    width: 133px;
+    left: 10px;
+    height: 3px;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    border-radius: 10px;
+}
+
+#container_texto_interativo{
+    position: relative;
+}
+
+#texto_interativo{
+    position: absolute;
+    top: 330px;
+    left: -50px;
+}
+
+#texto_interativo ol{
+    list-style: none;
+}
+
+#texto_interativo ol li{
+    transform: translate(-920px, 60px);
+    font-size: 4em;
+    letter-spacing: 10px;
+    color: #fff;
+
+    border-right: 2px solid;
+    width: 240px;
+    overflow: hidden;
+    animation: typing 10s  steps(6) infinite, piscar 2s infinite;
+}
+
+@keyframes typing{
+    0%{
+        width: 0;
+    }
+}
+
+@keyframes piscar{
+    50%{
+        border-color: transparent;
+    }
+}
+
+/* MAIN */
+
+#container_main{
+    margin: auto;
+    position: relative;
+}
+.sugestoes{
+    margin: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 150px;
+    height: 150px;
+    background-color: var(--cor_azul);
+
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.sugestoes:hover {
+    transform: scale(1.3);
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sugestoes:hover + .icone_produtos{
+    transform: translate(0px, -30px);
+    transition: 0.5s;
+}
+
+#produtos{
+    margin: auto;
+    width: 1920px;
+    height: 2300px;
+    background-color: rgb(254, 254, 254);
+    display: inline-flex;
+    justify-content: center;
+    
+   
+}
+
+.icone_produtos{
+    width: 100px;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 20px;
+    
+}
+
+.container_sugestoes{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.frase_sugestoes{
+    color: transparent;
+    position: absolute;
+    pointer-events: none;
+    top: 150px;
+}
+
+.sugestoes:hover ~ .frase_sugestoes{
+    color: white;
+    transition: 0.5s;
+    transform: scale(1.8);
+} 
+
+#container_medicamentos{
+    width: 100%;
+    height: 200px;
+    
+}
+#medicamentos{
+    width: 1900px;
+    height: 350px;
+    overflow-x: hidden;
+
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    top: 250px;   
+    overflow-y: hidden;
+}
+
+#cosmeticos{
+    width: 1900px;
+    height: 350px;
+    overflow-x: hidden;
+
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    top: 650px;
+    overflow-y: hidden;
+}
+
+#ofertas{
+    width: 1900px;
+    height: 350px;
+    overflow-x: hidden;
+
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    top: 1050px;
+    overflow-y: hidden;
+}
+
+#conveniencia{
+    width: 1900px;
+    height: 350px;
+    overflow-x: hidden;
+
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    top: 1450px;
+    overflow-y: hidden;
+}
+
+#infantil{
+    width: 1900px;
+    height: 350px;
+    overflow-x: hidden;
+
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    top: 1850px;
+    overflow-y: hidden;
+}
+
+
+
+.botao_D_E_estetica{
+    background-color: #f0f0f052;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 50px;
+    height: 100px;
+}
+
+.botao_D_E_estetica:hover{
+    background-color: #f0f0f0;
+    transform: scale(1.2);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.botao_D_E_ofertas{
+    background-color: #f0f0f052;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 50px;
+    height: 100px;
+}
+
+.botao_D_E_ofertas:hover{
+    background-color: #f0f0f0;
+    transform: scale(1.2);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.botao_D_E_conveniencia{
+    background-color: #f0f0f052;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 50px;
+    height: 100px;
+}
+
+.botao_D_E_conveniencia:hover{
+    background-color: #f0f0f0;
+    transform: scale(1.2);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.botao_D_E_infantil{
+    background-color: #f0f0f052;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 50px;
+    height: 100px;
+}
+
+.botao_D_E_infantil:hover{
+    background-color: #f0f0f0;
+    transform: scale(1.2);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.pos_botao_E{
+    position: absolute;
+    top: 100px;
+    left: 10px;
+
+}
+
+.pos_botao_D{
+    position: absolute;
+    top: 100px;
+    left: 1840px;
+}
+.botao_D_E_medicamentos{
+    background-color: #f0f0f052;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 50px;
+    height: 100px;
+}
+
+.botao_D_E_medicamentos:hover{
+    background-color: #f0f0f0;
+    transform: scale(1.2);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+#container_slider_medicamentos{
+    display: flex;
+    margin-left: 0;
+    transition: margin-left 0.5s ease-in-out;
+
+}
+
+#container_slider_cosmeticos{
+    display: flex;
+    margin-left: 0;
+    transition: margin-left 0.5s ease-in-out;
+
+}
+
+#container_slider_ofertas{
+    display: flex;
+    margin-left: 0;
+    transition: margin-left 0.5s ease-in-out;
+
+}
+
+#container_slider_conveniencia{
+    display: flex;
+    margin-left: 0;
+    transition: margin-left 0.5s ease-in-out;
+
+}
+
+#container_slider_infantil{
+    display: flex;
+    margin-left: 0;
+    transition: margin-left 0.5s ease-in-out;
+
+}
+
+
+.boxes{
+    width: 100%;
+    min-width: 300px;
+    height: 300px;
+    background-color: #ccc;
+    margin-right: 20px;
+
+    display: flex;
+    align-items: end;
+
+}
+.boxes:hover{
+    transform: scale(1.02);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.deco1{
+    width: 100%;
+    height: 95px;
+    background-color: var(--cor_azul);
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.deco2_nome_produto{
+    position: absolute;
+    font-weight: bolder;
+    top: 10px;
+    font-size: 1.5em;
+    pointer-events: none;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.boxe1:hover > .deco1 > .deco3_descricao_produto,
+.boxe2:hover > .deco1 > .deco3_descricao_produto,
+.boxe3:hover > .deco1 > .deco3_descricao_produto,
+.boxe4:hover > .deco1 > .deco3_descricao_produto,
+.boxe5:hover > .deco1 > .deco3_descricao_produto,
+.boxe6:hover > .deco1 > .deco3_descricao_produto,
+.boxe7:hover > .deco1 > .deco3_descricao_produto,
+.boxe8:hover > .deco1 > .deco3_descricao_produto,
+.boxe9:hover > .deco1 > .deco3_descricao_produto,
+.boxe10:hover > .deco1 > .deco3_descricao_produto{
+    position: absolute;
+    display: flex;
+    top: 45px;
+    transition: 0.3s;
+}
+
+.boxe1:hover > .deco1 > .deco4_botao_comprar,
+.boxe2:hover > .deco1 > .deco4_botao_comprar,
+.boxe3:hover > .deco1 > .deco4_botao_comprar,
+.boxe4:hover > .deco1 > .deco4_botao_comprar,
+.boxe5:hover > .deco1 > .deco4_botao_comprar,
+.boxe6:hover > .deco1 > .deco4_botao_comprar,
+.boxe7:hover > .deco1 > .deco4_botao_comprar,
+.boxe8:hover > .deco1 > .deco4_botao_comprar,
+.boxe9:hover > .deco1 > .deco4_botao_comprar,
+.boxe10:hover > .deco1 > .deco4_botao_comprar{
+    top: 80px;
+    transition: 0.3s;
+}
+
+.boxe1:hover > .deco1,
+.boxe2:hover > .deco1,
+.boxe3:hover > .deco1,
+.boxe4:hover > .deco1,
+.boxe5:hover > .deco1,
+.boxe6:hover > .deco1,
+.boxe7:hover > .deco1,
+.boxe8:hover > .deco1,
+.boxe9:hover > .deco1,
+.boxe10:hover > .deco1{
+    height: 130px;
+    transition: 0.3s;
+}
+
+
+
+
+.deco3_descricao_produto{
+    display: none;
+    pointer-events: none;
+    color: white;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.253);
+}
+
+.deco4_botao_comprar{
+    width: 80%;
+    height: 40px;
+    position: absolute;
+    top: 45px;
+    font-size: 1em;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(240, 240, 240);
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+}
+
+.deco4_botao_comprar:hover{
+    transform: scale(1.1);
+    font-weight: 40;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+
+.icone_geral_produtos{
+    border-radius: 50%;
+    height: 35px;
+}
+
+.nome_geral_produtos{
+    display: inline;
+    padding-left: 10px;
+}
+
+.centralizar_geral_produtos{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+
+/* ~~~~DEFINIR IMAGENS~~~~ */
+
+.boxe1{
+    background-image: url(imagens/paracetamol.jpg);
+    background-size: 300px 210px;
+    
+}
+.container_linha_produtos{
+    position: relative;
+}
+.linha_produtos{
+    position: absolute;
+    height: 5px;
+    width: 100px;
+    background-color: var(--cor_verde);
+    border-radius: 10px;
+    top: 10px;
+    left: -90px;
+}
+
+.linha_produtos_menor{
+    position: absolute;
+    width: 50px;
+    left: -45px;
+}
+
+
+
+/* ~~~~FOOTER~~~~ */
+
+footer{
+    width: 1920px;
+    height: 200px;
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#imagem_footer{
+    display: inline;
+    width: 400px;
+    position: absolute;
+    left: 100px;
+}
+#opcoes_footer{
+    display: inline;
+    display: flex;
+    align-items: baseline;
+
+    position: relative;
+}
+
+#container_footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#opcoes_footer ol{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.titulo_footer{
+    font-weight: bolder;
+}
+
+#end_titulo{
+    font-weight: bolder;
+}
+

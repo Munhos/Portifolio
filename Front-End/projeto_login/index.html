@@ -1,106 +1,518 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_login.css">
-    <link rel="stylesheet" href="style_contact.css">
-    <link rel="stylesheet" href="style_login_login.css">
-    <title>Login Screen</title>
-    <script src="https://kit.fontawesome.com/169d99f0e8.js" crossorigin="anonymous"></script>
+    <title>Madre Farma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="imagens/icone_miniatura.jpg" type="image/x-icon">
+    
 </head>
 <body>
     <header>
-        <nav>
-            <ol id="lista">
-                <li id="logo">LOGO</li>
-                <li class="elementos_nav" id="botao_nav_home">Home</li>
-                <li class="elementos_nav" id="botao_nav_about">About</li>
-                <li class="elementos_nav" id="botao_nav_services">Services</li>
-                <li class="elementos_nav" id="botao_nav_contact">Contact</li>
-                <li class="elementos_nav" id="botao_nav_login">Login</li>
-            </ol>
-        </nav>
+        <div id="container_header">
+            <nav>
+                <ol id="lista_header">
+                    <li><button class="botao">Produtos</button>
+                    <div class="linha_botao"></div></li>
+                    <li><button class="botao">Sobre Nós</button>
+                    <div class="linha_botao"></div></li>
+                    <li><button class="botao">Contato</button>
+                    <div class="linha_botao"></div></li>
+                    <li><button class="botao">Trabalhe Conosco</button>
+                    <div class="linha_botao"></div></li>
+                    <li><button class="botao">Login</button>
+                    <div class="linha_botao"></div></li>
+                    <li><button class="botao">Carrinho</button>
+                        <div class="linha_botao"></div></li>
+                </ol>
+            </nav>
+            <div id="container_texto_interativo">
+                <div id="texto_interativo">
+                    <ol>
+                        <li>Saúde</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </header>
-
     <main>
-        <dialog id="fundo_login">
-            <div id="informacoes">
-                <h1>Registration</h1>
+        <div id="container_main">
+            <div id="produtos">
+                <a href="#medicamentos">
+                    <div class="container_sugestoes">
+                        <div class="sugestoes"></div>
+                        <img src="imagens/icone_remedio.png" alt="" class="icone_produtos">
+                        <p class="frase_sugestoes">Medicamentos</p>
+                    </div>
+                </a>
 
+                <a href="#cosmeticos">
+                    <div class="container_sugestoes">
+                        <div class="sugestoes"></div>
+                        <img src="imagens/icone_beleza.png" alt="" class="icone_produtos">
+                        <p class="frase_sugestoes">Cosmeticos</p>
+                    </div>
+                </a>
+
+                <a href="#ofertas">
+                    <div class="container_sugestoes">
+                        <div class="sugestoes"></div>
+                        <img src="imagens/icone_oferta.png" alt="" class="icone_produtos">
+                        <p class="frase_sugestoes">Ofertas</p>
+                    </div>
+                </a>
+
+                <a href="#conveniencia">
+                    <div class="container_sugestoes">
+                        <div class="sugestoes"></div>
+                        <img src="imagens/icone_chocolate.png" alt="" class="icone_produtos">
+                        <p class="frase_sugestoes">Conveniência</p>
+                    </div>
+                </a>
+
+                <a href="#infantil">
+                    <div class="container_sugestoes">
+                        <div class="sugestoes"></div>
+                        <img src="imagens/icone_crianca.png" alt="" class="icone_produtos">
+                        <p class="frase_sugestoes">Infantil</p>
+                    </div>
+                </a>
+            </div>
+
+            <div id="container_medicamentos">
+                <div id="medicamentos">
+                    <div class="centralizar_geral_produtos">
+                        <img src="imagens/icone_miniatura.jpg" alt="" class="icone_geral_produtos">
+                        <p class="nome_geral_produtos">MEDICAMENTOS</p>
+                        <div class="container_linha_produtos">
+                            <div class="linha_produtos"></div>
+                        </div>
+                    </div>
+                    <div id="container_slider_medicamentos">
+                        <div class="boxes boxe1">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">PARACETAMOL</p>
+                                <p class="deco3_descricao_produto">Usado para combate de dores em geral</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="boxes boxe2">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe3">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe4">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe5">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe6">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe7">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe8">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe9">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe10">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                            
+                    </div>
+                    <button id="botao_D_medicamentos" class="botao_D_E_medicamentos pos_botao_D">></button>
+                    <button id="botao_E_medicamentos" class="botao_D_E_medicamentos pos_botao_E"><</button>
+                    
     
-                <div class="div_position_relative">
-                    <input type="text" id="input_username">
-                    <label for="input_username" id="label_username">Username</label>
                 </div>
 
-                <br>
+                <div id="cosmeticos">
+                    <div class="centralizar_geral_produtos">
+                        <img src="imagens/icone_miniatura.jpg" alt="" class="icone_geral_produtos">
+                        <p class="nome_geral_produtos">COSMETICOS</p>
+                        <div class="container_linha_produtos">
+                            <div class="linha_produtos"></div>
+                        </div>
+                    </div>
+                    <div id="container_slider_cosmeticos">
+                        <div class="boxes boxe11">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="boxes boxe12">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe13">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe14">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe15">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe16">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe17">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe18">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe19">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe20">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                    </div>
+                    <button id="botao_D_cosmeticos" class="botao_D_E_estetica pos_botao_D">></button>
+                    <button id="botao_E_cosmeticos" class="botao_D_E_estetica pos_botao_E"><</button>
+    
+                </div>
 
-                <div class="div_position_relative">
-                    <input type="email" name="email" id="input_email">
-                    <label for="input_email" id="label_email">E-mail</label>
+                <div id="ofertas">
+                    <div class="centralizar_geral_produtos">
+                        <img src="imagens/icone_miniatura.jpg" alt="" class="icone_geral_produtos">
+                        <p class="nome_geral_produtos">OFERTAS</p>
+                        <div class="container_linha_produtos">
+                            <div class="linha_produtos linha_produtos_menor"></div>
+                        </div>
+                    </div>
+                    <div id="container_slider_ofertas">
+                        <div class="boxes boxe21">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="boxes boxe22">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe23">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe24">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe25">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe26">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe27">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe28">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe29">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe30">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                    </div>
+                    <button id="botao_D_ofertas" class="botao_D_E_ofertas pos_botao_D">></button>
+                    <button id="botao_E_ofertas" class="botao_D_E_ofertas pos_botao_E"><</button>
+    
+                </div>
+
+                <div id="conveniencia">
+                    <div class="centralizar_geral_produtos">
+                        <img src="imagens/icone_miniatura.jpg" alt="" class="icone_geral_produtos">
+                        <p class="nome_geral_produtos">CONVENIÊNCIA</p>
+                        <div class="container_linha_produtos">
+                            <div class="linha_produtos"></div>
+                        </div>
+                    </div>
+                    <div id="container_slider_conveniencia">
+                        <div class="boxes boxe31">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="boxes boxe32">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe33">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe34">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe35">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe36">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe37">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe38">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe39">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe40">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                    </div>
+                    <button id="botao_D_conveniencia" class="botao_D_E_conveniencia pos_botao_D">></button>
+                    <button id="botao_E_conveniencia" class="botao_D_E_conveniencia pos_botao_E"><</button>
+    
+                </div>
+
+
+                <div id="infantil">
+                    <div class="centralizar_geral_produtos">
+                        <img src="imagens/icone_miniatura.jpg" alt="" class="icone_geral_produtos">
+                        <p class="nome_geral_produtos">INFANTIL</p>
+                        <div class="container_linha_produtos">
+                            <div class="linha_produtos linha_produtos_menor"></div>
+                        </div>
+                    </div>
+                    <div id="container_slider_infantil">
+                        <div class="boxes boxe41">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="boxes boxe42">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe43">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe44">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe45">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe46">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe47">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe48">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe49">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                        <div class="boxes boxe50">
+                            <div class="deco1">
+                                <p class="deco2_nome_produto">NOME DO PRODUTO</p>
+                                <p class="deco3_descricao_produto">DESCRIÇÃO DO PRODUTO</p>
+                                <button class="deco4_botao_comprar">Comprar</button>
+                            </div></div>
+                    </div>
+                    <button id="botao_D_infantil" class="botao_D_E_infantil pos_botao_D">></button>
+                    <button id="botao_E_infantil" class="botao_D_E_infantil pos_botao_E"><</button>
+    
                 </div>
                 
-                <br>
-
-                <div class="div_position_relative">
-                    <input type="password" name="senha" id="input_senha">
-                    <label for="input_senha" id="label_senha">Senha</label>
-                </div>
-
-                <br>
-
-                <div>
-                    <input type="checkbox" name="termos" class="termos_usuario">
-                    <p class="termos_usuario">accept users terms</p>
-                </div>
-
-                <br>
-                
-                <input type="submit" value="Register" id="botao_registro">
-                <p id="termos">Alread have a accont? <strong id="botao_register_login">Login</strong></p>
             </div>
-        </dialog>
-
-        <dialog id="fundo_contact">
-            <div id="div_dundo_contact">
-                <h1>Contact</h1>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repudiandae recusandae, eveniet neque accusantium dolores exercitationem nulla expedita! Adipisci labore, quod accusantium natus sequi impedit ullam reiciendis voluptates alias blanditiis?</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit similique eius, numquam doloribus molestias illo laboriosam nisi suscipit, quibusdam eveniet ab aspernatur. Cupiditate atque excepturi, sed laborum ipsum ab.</p>
-                <div id="icones">
-                    <i class="fa-brands fa-square-facebook" class="icones"></i>
-                    <i class="fa-brands fa-square-instagram" class="icones"></i>
-                    <a href="https://www.linkedin.com/in/julio-cesar-96088a236/" target="_blank"><i class="fa-brands fa-linkedin" class="icones"></i></a>
-                </div>
-
-
-            </div>
-        </dialog>
-
-        <dialog id="fundo_login_login">
-            <div id="div_fundo_login_login">
-                <h1>Login</h1>
-                <div>
-                    <input type="email" name="" id="input_email_login">
-                    <label for="input_email_login" id="label_email_login">E-mail</label>
-                    
-                </div>
-
-                <div>
-                    <input type="password" name="" id="input_senha_login">
-                    <label for="input_senha_login" id="label_senha_login">Senha</label>
-                    
-                </div>
-
-                <div>
-                    <input type="submit" value="Login" id="botao_login">
-                </div>
-            </div>
-        </dialog>
+            
+        </div>
     </main>
-    <script src="script.js"></script>
+    <div id="container_footer">
+        <footer>
+            <img src="imagens/logo-header.png" alt="" id="imagem_footer">
+            <ol id="opcoes_footer">
+                <ol>
+                    <li class="titulo_footer">Institucional</li>
+                    <li>Sobre a Madre Farma</li>
+                    <li>Nossas lojas</li>
+                    <li>Trabalhe conosco</li>
+                    <li>Fale conosco</li>
+                </ol>
+                <ol>
+                    <li class="titulo_footer">Compras Online</li>
+                    <li>Políticas de pagamento</li>
+                    <li>Política de entrega</li>
+                    <li>Política de privacidade</li>
+                </ol>
+                <ol>
+                    <li class="titulo_footer">Minha conta</li>
+                    <li>Acessar</li>
+                    <li>Cadastrar</li>
+                    <li>Meus pedidos</li>
+                    <li>Editar endereços</li>
+                </ol>
+                <ol>
+                    <li class="titulo_footer">Onde nos encontrar</li>
+                    <li>Rua: XYZ</li>
+                    <li>Bairro: ABC</li>
+                </ol>
+                <ol>
+                    <li class="titulo_footer">Contato</li>
+                    <li>Celular: ABC</li>
+                    <li>Whatsapp: DEF</li>
+                    
+                </ol>
+
+            </ol>
+
+        </footer>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
 </body>
 </html>
